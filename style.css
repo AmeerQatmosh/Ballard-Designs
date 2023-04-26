@@ -1,0 +1,43 @@
+html {
+    text-rendering: optimizeLegibility;
+}
+
+table, table th, table td {
+    border: 0px solid #ddd;
+  }
+  table {
+    width: 100%;
+    max-width: 100%;
+  }
+  table {
+    background-color: transparent;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+body {
+    font-family: "Montserrat",Verdana,Helvetica,sans-serif;
+    font-size: 12px;
+    line-height: 1.42857;
+    color: #000;
+  }
+
+.bdlogo {
+    background: no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    display: block;
+    width: 386px;
+    height: 41px;
+    margin: 0;
+    padding: 0 0 0 18px;
+    background-size: 86% !important;
+    background-position: center center !important;
+}
