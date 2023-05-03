@@ -2,24 +2,24 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial=scale=1.0">
         <title>Furniture Stores and Home Decor</title>
         <link rel="icon" type="image/x-icon" href="img/BD_favicon.ico">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script> 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
+        <script src="https://kit.fontawesome.com/4572a22e59.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <header>
-            <div class="user-service">
-                <div class="catalog-store">
+            <div id="top-left">
                     <a href="https://www.ballarddesigns.com/RequestACatalogView?">Request a Catalog</a>
                     <a href="https://www.ballarddesigns.com/BallardDesigns/US/CustomerService/store-locations/content-path">Find a Store</a>
-                </div>
-                
-                <div class="user-profile">
+            </div>
+
+            <div id="top-right">
                     <i class="fa-solid fa-right-to-bracket" style="color:#4d4d4d;"></i>
                     <a href="https://www.ballarddesigns.com/UserLogonView?storeId=10052&catalogId=10551&langId=-1">Sign in/Register</a>
                     <i class="fa-solid fa-heart" style="color:#4d4d4d;" ></i>
@@ -28,228 +28,129 @@
                     <a href="https://www.ballarddesigns.com/OrderStatusView?storeId=10052&catalogId=10551&langId=-1">Order Status</a>
                     <i class="fa-solid fa-cart-shopping" style="color:#4d4d4d;"></i>
                     <a href="https://www.ballarddesigns.com/ShoppingCartView?catalogId=10551&storeId=10052&langId=-1&krypto=THEysmZMk1RsAztCX9cm7Cs6ooXA2Iwgv8yO5qnOW5iMDkorSnznxbDUTsGAFLWwBB%2F1bczIuwZHnR9l4pbVwSDGS2MLhfx5XlLCCL1atz5d03sycKswilDsvGuRjapcKzuZwQKDQXCRTDIT1bzpUbjXy8Ar2zYpHApmnGRvk4ZXuQ8xVYqI38rxRcARMb7C">Cart</a>
-                </div>
+            </div>
+
+            <div id="middle">
+                <a href="https://www.ballarddesigns.com/" class="logo" title="Ballard Designs Logo">
+                    <img src="https://static1.ballarddesigns.com/wcsstore/images/BallardDesigns/header/BallardDesigns_SiteLogo.svg">
+                </a>
             </div>
 
 
-            <div class="website-logo">
-                <div>
-                    <a href="https://www.ballarddesigns.com/" class="logo" title="Ballard Designs Logo">
-                        <img src="https://static1.ballarddesigns.com/wcsstore/images/BallardDesigns/header/BallardDesigns_SiteLogo.svg">
-                    </a>
-                </div>
-
-                
+            <div id="bottom-left">
+                <a href="https://www.ballarddesigns.com/GiftRegistryHomeView">Gift Registry</a>
+                <a href="https://www.ballarddesigns.com/BallardDesigns/US/CustomerService/DesignServices/content-path">Design services</a>
             </div>
 
+            <!-- <div id="search-box">
+                <input id="header-search-box" type="text" name="search" maxlength="64" autocomplete="off" aria-label="Search Ballard Designs" placeholder="Keyword/Item #"  aria-expanded="false" aria-controls="unbxdSearchResult" aria-owns="unbxdSearchResult" aria-haspopup="grid" aria-required="true" unbxdattr="sq">
+                <button id="search-button" class="button third small branding" type="submit" aria-label="submit search">
+                </button>
+            </div> -->
 
-            <div class="customer-service">
-                <div class="registry-service">
-                    <a href="https://www.ballarddesigns.com/GiftRegistryHomeView">Gift Registry</a>
-                    <a href="https://www.ballarddesigns.com/BallardDesigns/US/CustomerService/DesignServices/content-path">Design Services</a>
-                </div>
-
-                <div class="search-box">
-
-                      <div class="input-group">
-                        <input class="form-control border-end-0 border" type="search" value="Keyword/Item #" id="example-search-input" style="font-size: 12px;font-weight:bold;">
-                        <span class="input-group-append">
-                            <button class="btn btn-outline-secondary bg-white border-start-0 border-bottom-0 border ms-n5" type="button">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </span>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <nav id="nav-menu" class="nav-menu" role="navigation" aria-label="Main menu">
-                    <ul>
-                      <li>
-                        <a href="#">outdoor</a>
-                        <ul>
-                          <li><a href="#">Shop all outdoor</a></li>
-                          <li><a href="#">Outdoor Furniture</a>
-                            <li><a>All Outdoor Furniture</a></li>
-                            <li><a>Outdoor Furniture Collection</a></li>
-                            <li><a>Dining Sets</a></li>
-                            <li><a>Dining Tables</a></li>
-                            <li><a>Dining Chairs</a></li>
-                            <li><a>Accent Furniture</a></li>
-                            <li><a>Chaise Lounges</a></li>
-                            <li><a>Sofas & Lounge Seating</a></li>
-                            <li><a>Swings & Daybeds</a></li>
-                            <li><a>Storage Solution</a></li>
-                            <li><a>Outdoor Furniture Covers</a></li>
-                        </li>
-                          <li><a href="#">Outdoor Cushions & Pillows</a>
-                            <li><a>Cushions</a></li>
-                            <li><a>Pillows</a></li>
-                            <li><a>Cushions Care Guide</a>
-                            </li>
-                        </li>
-                          <li><a href="#">Outdoor Umbrellas & Stands</a></li>
-                          <li><a href="#">Outdoor Fabric by the yard</a></li>
-                          <li><a href="#">Outdoor Rugs & Drapery</a></li>
-                          <li><a href="#">Outdoor Decor </a></li>
-                          <li><a href="#">Shop by Style</a></li>
-
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Furniture</a>
-                        <ul>
-                          <li><a href="#"></a></li>
-                          <li><a href="#"></a></li>
-                          <li><a href="#"></a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Mirrors & Art</a>
-                        <ul>
-                          <li><a href="#"></a></li>
-                          <li><a href="#"></a></li>
-                          <li><a href="#"></a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#">Decor & More</a>
-                    </li>
-                    <li>
-                        <a href="#">Rugs & Drapery</a>
-                    </li>
-                    <li>
-                        <a href="#">Lighting</a>
-                    </li>
-                    <li>
-                        <a href="#">Bed & Bath</a>
-                    </li>
-                    <li>
-                        <a href="#">Fabric</a>
-                    </li>
-                    <li>
-                        <a href="#">Sale</a>
-                    </li>
-                    <li>
-                        <a href="#">Holiday</a>
-                    </li>
-                    </ul>                  
-            </nav>
+    
 
         </header>
-<!-- 
-        <div>
-            <img src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/050223/050223_homepage.jpg" 
-            alt="adv"
-            style="width:70%; height:70%;"
-            display="block"
-            jus>
-        </div> -->
 
         <div class="container pt-5">
-            <div class="row edgey text-center grid-flex ">
+            <div id="row-catgegoy-grid" class="row edgey text-center grid-flex">
                 <div class="col-md-2">
-                    <a class="link-black" href="https://www.ballarddesigns.com/new/all/">
+                    <a class="link-black" href="/new/all/">
                         <img style="width:188px; height:188px;" 
                         src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_wallart_d.jpg" 
-                        alt="New Arrivals"
-                        class="hover-opacity">
-                        <h2 class="title-modern h6 ">New Arrivals</h2> 
+                        alt="New Category" 
+                        class="lazyload img-responsive lazyloaded">
                     </a>
+                    <h2 class="title-modern h6 ">New Arrivals</h2>
                 </div>
                 <div class="col-md-2">
-                    <a class="link-black" href="https://www.ballarddesigns.com/outdoor/cushions-pillows/pillows">
+                    <a class="link-black" href="/new/all/">
                         <img style="width:188px; height:188px;" 
                         src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_pillow_d.jpg" 
-                        alt="Outdoor Pillows"
-                        class="hover-opacity"> 
-                        <h2 class="title-modern h6 ">Outdoor Pillows</h2>
+                        alt="New Category" 
+                        class="lazyload img-responsive lazyloaded">
                     </a>
+                    <h2 class="title-modern h6 ">Outdoor Pillows</h2>
                 </div>
 
                 <div class="col-md-2">
-                    <a class="link-black" href="https://www.ballarddesigns.com/outdoor/?">
+                    <a class="link-black" href="/new/all/">
                         <img style="width:188px; height:188px;" 
                         src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_outdoor_d.jpg" 
-                        alt="Outdoor"
-                        class="hover-opacity"> 
-                        <h2 class="title-modern h6 ">Outdoor</h2>
+                        alt="New Category" 
+                        class="lazyload img-responsive lazyloaded">
                     </a>
+                    <h2 class="title-modern h6 ">Outdoor</h2>
                 </div>
 
                 <div class="col-md-2">
-                    <a class="link-black" href="https://www.ballarddesigns.com/outdoor/umbrellas/?">
+                    <a class="link-black" href="/new/all/">
                         <img style="width:188px; height:188px;" 
                         src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/032823/MA23_category_umbrella_d.jpg" 
-                        alt="Umbrellas"
-                        class="hover-opacity"> 
-                        <h2 class="title-modern h6 ">Umbrellas</h2>
+                        alt="New Category" 
+                        class="lazyload img-responsive lazyloaded">
                     </a>
+                    <h2 class="title-modern h6 ">Umbrellas</h2>
                 </div>
 
                 <div class="col-md-2">
-                    <a class="link-black" href="https://www.ballarddesigns.com/outdoor/decor/planters/?">
+                    <a class="link-black" href="/new/all/">
                         <img style="width:188px; height:188px;" 
                         src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_planters_d.jpg" 
-                        alt="Planters"
-                        class="hover-opacity"> 
-                        <h2 class="title-modern h6 ">Planters</h2>
+                        alt="New Category" 
+                        class="lazyload img-responsive lazyloaded">
                     </a>
+                    <h2 class="title-modern h6 ">Planters</h2>
                 </div>
 
-                <div></div>
-
-                
-
                 <div class="col-md-2">
-                    <a class="link-black" href="https://www.ballarddesigns.com/rugs-drapery/rugs/all/">
+                    <a class="link-black" href="/new/all/">
                         <img style="width:188px; height:188px;" 
                         src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_rugs_d.jpg" 
-                        alt="Rugs & Mats"
-                        class="hover-opacity"> 
-                        <h2 class="title-modern h6 ">Rugs & Mats</h2>
+                        alt="New Category" 
+                        class="lazyload img-responsive lazyloaded">
                     </a>
+                    <h2 class="title-modern h6 ">Rugs & Mats</h2>
                 </div>
 
                 <div class="col-md-2">
-                    <a class="link-black" href="https://www.ballarddesigns.com/furniture/bedroom/nightstand/?">
+                    <a class="link-black" href="/new/all/">
                         <img style="width:188px; height:188px;" 
                         src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_nightstands_d.jpg" 
-                        alt="Nightstands & Dressers"
-                        class="hover-opacity"> 
-                        <h2 class="title-modern h6 ">Nightstands & Dressers</h2>
+                        alt="New Category" 
+                        class="lazyload img-responsive lazyloaded">
                     </a>
+                    <h2 class="title-modern h6 ">Nightstands & Dressers</h2>
                 </div>
 
                 <div class="col-md-2">
-                    <a class="link-black" href="https://www.ballarddesigns.com/furniture/living-room/coffee-accent-tables/?">
+                    <a class="link-black" href="/new/all/">
                         <img style="width:188px; height:188px;" 
                         src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2022/112822/OND22_category_coffee_d.jpg" 
-                        alt="Coffee & Accent Tables"
-                        class="hover-opacity"> 
-                        <h2 class="title-modern h6 ">Coffee & Accent Tables</h2>
+                        alt="New Category" 
+                        class="lazyload img-responsive lazyloaded">
                     </a>
+                    <h2 class="title-modern h6 ">Coffee & Accent Tables</h2>
                 </div>
 
                 <div class="col-md-2">
-                    <a class="link-black" href="https://www.ballarddesigns.com/furniture/home-office/bookcases/?">
+                    <a class="link-black" href="/new/all/">
                         <img style="width:188px; height:188px;" 
                         src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_bookcases_d.jpg" 
-                        alt="Bookcases Cabinets Category"
-                        class="hover-opacity">
-                        <h2 class="title-modern h6 ">Bookcases Cabinets Category</h2>
+                        alt="New Category" 
+                        class="lazyload img-responsive lazyloaded">
                     </a>
+                    <h2 class="title-modern h6 "> Bookcases Cabinets Category</h2>
                 </div>
 
                 <div class="col-md-2">
-                    <a class="link-black" href="https://www.ballarddesigns.com/trends-features/trends/design-school/gordon-dunning/">
+                    <a class="link-black" href="/new/all/">
                         <img style="width:188px; height:188px;" 
                         src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/032123/MA23_category_DS_d.jpg" 
-                        alt="Shop Episode 5"
-                        class="hover-opacity"> 
-                        <h2 class="title-modern h6 ">Shop Episode 5</h2>
+                        alt="New Category" 
+                        class="lazyload img-responsive lazyloaded">
                     </a>
+                    <h2 class="title-modern h6 ">Shop Episode 5</h2>
                 </div>
             </div>
         </div> 
@@ -257,9 +158,7 @@
         <footer>
             
         </footer>
-        <script src="script.js"></script>         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
-        <script src="https://kit.fontawesome.com/4572a22e59.js" crossorigin="anonymous"></script>
+
     </body>
 
 </html>
