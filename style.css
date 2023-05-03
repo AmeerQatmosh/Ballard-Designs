@@ -1,28 +1,10 @@
-/* For mobile phones:
-[class*="col-"] {
-  width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-} */
-
 * {
   box-sizing: border-box;
   font-family: "Montserrat",Verdana,Helvetica,sans-serif;
   line-height: 1.42857;
-  overflow:hidden;
 }
-
-body {
-  margin: 0;
-  font-family: "Montserrat",Verdana,Helvetica,sans-serif;
-  color: black;
-  font-size: 11px;
-}
-
 div {
   display: inline-block;
-
 }
 
 a {
@@ -51,32 +33,37 @@ a:active {
   color:#4d4d4d;
 }
 
-.user-service {
-  display: flex;
-  justify-content: space-between;
-  padding: 9px 140px 0px 140px;
+body {
+  margin: 0;
+  font-family: "Montserrat",Verdana,Helvetica,sans-serif;
+  color: black;
+  font-size: 11px;
+}
+
+header {
+  overflow: hidden;
+  padding: 2px 150px 0px 150px;
+  background-color: aliceblue;
 
 }
 
-.catalog-store {
-  display: flex;
-  justify-content: flex-start;
+#top-left.a {
+  float: left;
 }
 
-#user-profile {
-  display: flex;
-  justify-content:flex-end;
+#top-right {
+  float: right;
   color: #4d4d4d;
 }
 
-.website-logo {
+#middle {
   display:flex;
   justify-content: center;
 }
 
 .logo {
   background: no-repeat;
-  display: flex;
+  display: block;
   width: 376px;
   height: 41px;
   margin: 0;
@@ -84,118 +71,32 @@ a:active {
   background-position: center center !important;
 }
 
-.customer-service{
-  display: flex;
-  justify-content: space-between;
-  padding: 2px 140px 22px 140px;
-}
-
-.registry-service{
-  display: flex;
-  justify-content: flex-start;
-}
-
-.registry-service a {
+#bottom-left > a {
   font-size: 14px;
-  font-weight: 500;
-  color: black;
   padding-right: 13px;
-
+  color: black;
+  font-weight: 500;
 }
 
-.registry-service > a:hover {
+#bottom-left > a:hover {
   text-decoration: none;
 
 }
 
-.search-box {
-  display: flex;
-  justify-content: flex-end;
-  bottom: 10px;
-  position: sticky;
-  width: 300px;
-  height: 40px;
+#search-box {
+  bottom: 9px;
+  position: relative;
+  margin-top: -16px;
+  width: 240px;
 }
 
 #header-search-box {
   width: 100%;
-  padding-right: 25px;
+  height: 40px;
+  padding-right: 28px;
   border-radius: 6px;
+  background-size: 18px;
 }
-
-
-/* nav bar */
-
-nav {
-  width: 100%;
-  display: flex; /* Use flexbox to layout the items horizontally */
-  justify-content: center; /* Add spacing between each item */
-  background-color: white; /* Set a background color */
-  color: black; /* Set the font color */
-  font-size: 15px;
-  text-align: center;
-  padding: 0;
-  list-style-type: none;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  margin: 0;
-
-}
-
-ul {
-  list-style-type: none; /* Remove bullet points from the list */
-  margin: 0;
-  padding: 0;
-  display: flex; /* Use flexbox to layout the items horizontally */
-  align-items: center; /* Center the items vertically */
-}
-
-li {
-  padding: 1px ; /* Add some padding to the items */
-}
-
-li a {
-  color: white; /* Set the font color */
-  text-decoration: none; /* Remove underline from the links */
-  text-align: center;
-  align-items: center;
-}
-
-li:hover {
-  background-color: white; /* Add background color on hover */
-}
-
-li ul {
-  display: none; /* Hide the sub-navigation by default */
-  position: absolute; /* Position it absolutely relative to the parent */
-  background-color: #f9f9f9; /* Set a background color */
-  padding: 0;
-}
-
-li:hover ul {
-  display: block; /* Show the sub-navigation on hover */
-  
-}
-
-nav .a:hover {
-  border-bottom: 10px solid red;
-}
-
-li ul li {
-  display: block; /* Display the sub-navigation items vertically */
-}
-
-li ul li a {
-  color: white; /* Set the font color */
-}
-
-
-/* End of navbar*/
-
-
-
-
-
 
 .grid-flex {
   display: flex;
@@ -203,24 +104,30 @@ li ul li a {
   justify-content: center;
 }
 
-
 .text-center {
   text-align: center;
 }
 
-.hover-opacity {
-  opacity: 1.0;
-  transition: opacity 0.1s ease-in-out;
-
+.img-responsive{
+  display: block;
+  max-width: 100%;
 }
 
-.hover-opacity:hover{
-  opacity: 0.5;
+
+.img.lazyload.lazyloaded:not(.no-resizer) {
+  width: 100% !important;
+  height: auto !important;
 }
 
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.img.lazyload.lazyloaded {
+  min-height: auto !important;
+  background: transparent none !important;
+  opacity: 1;
+  transition: opacity 0.1s;
 }
 
+.img.lazyload {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
