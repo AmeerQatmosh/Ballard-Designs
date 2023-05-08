@@ -6,12 +6,12 @@
 @media screen and (max-width: 768px) {
 } */
 
+/* Primary Elements */
+
 * {
   box-sizing: border-box;
   font-family: "Montserrat",Verdana,Helvetica,sans-serif;
   line-height: 1.42857;
-  overflow:hidden;
-
 }
 
 body {
@@ -21,42 +21,66 @@ body {
   font-size: 11px;
 }
 
-div {
-  display: inline-block;
 
-}
+/* Display Links in different ways */
 
-a {
+/* header-element */
+
+.header-element {
   font-size: 11px;
   color: #4d4d4d;
   padding-right: 13px;
 }
 
-a:link{
+.header-element:link{
   font-size: 11px;
   text-decoration: none;
   color:#4d4d4d;
 }
 
-a:visited { 
+.header-element:visited { 
   text-decoration: none; 
   color:#4d4d4d;
 }
 
-a:hover{
+.header-element:hover{
   text-decoration: underline;
   color:#4d4d4d;
 }
 
-a:active {
+.header-element:active {
   color:#4d4d4d;
 }
+
+
+/* registry-service */
+
+.registry-service:link{
+  font-size: 14px;
+  text-decoration: none;
+  color:black;
+  font-weight: 500;
+}
+
+.registry-service:visited { 
+  text-decoration: none; 
+  color:#4d4d4d;
+}
+
+.registry-service:hover{
+  text-decoration: none;
+}
+
+.registry-service:active {
+  color:#4d4d4d;
+}
+
+/* Header Elements */
 
 .user-service {
   display: flex;
   justify-content: space-between;
-  padding: 9px 140px 0px 140px;
-
+  padding: 9px 15% 0px 15%;
 }
 
 .catalog-store {
@@ -71,29 +95,27 @@ a:active {
 }
 
 .website-logo {
-  display:flex;
   justify-content: center;
 }
 
 .logo {
-  background: no-repeat;
   display: flex;
-  width: 376px;
-  height: 41px;
-  margin: 0;
+  height: 24px;
   padding: 0 0 0 18px;
-  background-position: center center !important;
 }
 
 .customer-service{
   display: flex;
   justify-content: space-between;
-  padding: 2px 140px 22px 140px;
+  padding: 0 15% 5px 15%;
 }
 
-.registry-service{
+.registry-service {
   display: flex;
   justify-content: flex-start;
+  vertical-align: bottom;
+  padding: 0 13px 0 0;
+
 }
 
 .registry-service a {
@@ -101,21 +123,21 @@ a:active {
   font-weight: 500;
   color: black;
   padding-right: 13px;
-
+  padding-top: 25px;
 }
 
 .registry-service > a:hover {
   text-decoration: none;
-
 }
 
 .search-box {
   display: flex;
-  justify-content: flex-end;
-  bottom: 10px;
+  justify-content:center;
+  align-items: center;
   position: sticky;
   width: 300px;
   height: 40px;
+  margin-top: 1%;
 }
 
 #header-search-box {
@@ -124,79 +146,61 @@ a:active {
   border-radius: 6px;
 }
 
-
-/* nav bar */
+/* Navbar Elements */
 
 nav {
-  width: 100%;
-  display: flex; /* Use flexbox to layout the items horizontally */
-  justify-content: center; /* Add spacing between each item */
-  background-color: white; /* Set a background color */
-  color: black; /* Set the font color */
-  font-size: 15px;
-  text-align: center;
-  padding: 0;
-  list-style-type: none;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  margin: 0;
-
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  border-bottom: 0.5px solid rgb(203, 202, 202);
+  border-top: 0.5px solid rgb(203, 202, 202);
 }
 
-ul {
-  list-style-type: none; /* Remove bullet points from the list */
+
+nav ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Use flexbox to layout the items horizontally */
-  align-items: center; /* Center the items vertically */
 }
 
-li {
-  padding: 1px ; /* Add some padding to the items */
+nav ul li {
+  margin: auto 0;
+  float: left;
 }
 
-li a {
-  color: white; /* Set the font color */
-  text-decoration: none; /* Remove underline from the links */
-  text-align: center;
-  align-items: center;
+nav ul li a {
+  display: block;
+  font-size: 12px;
+  color: black;
+  text-transform: uppercase;
+  margin-right: 55px;
+  text-decoration: none;
+  font-weight: 500;
+  padding: auto 15px;
+
+}
+nav ul li a:hover{
+  text-decoration: none;
+  color:black;
 }
 
-li:hover {
-  background-color: white; /* Add background color on hover */
-}
-
-li ul {
+.nav-item ul {
   display: none; /* Hide the sub-navigation by default */
   position: absolute; /* Position it absolutely relative to the parent */
   background-color: #f9f9f9; /* Set a background color */
   padding: 0;
 }
 
-li:hover ul {
+.nav-item:hover ul {
   display: block; /* Show the sub-navigation on hover */
-  
+  width: 50%;
 }
 
 nav .a:hover {
-  border-bottom: 10px solid red;
+  border-bottom: 10px solid #4d4d4d;
 }
 
-li ul li {
-  display: block; /* Display the sub-navigation items vertically */
-}
-
-li ul li a {
-  color: white; /* Set the font color */
-}
-
-
-/* End of navbar*/
-
-
-
-
-
+/* Products */
 
 .grid-flex {
   display: flex;
@@ -204,6 +208,21 @@ li ul li a {
   justify-content: center;
 }
 
+.link-black {
+    text-decoration: none;
+}
+
+.product-item {
+  color:#4d4d4d;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.link-black:hover {
+  text-decoration: underline;
+  color: #4d4d4d;
+
+}
 
 .text-center {
   text-align: center;
@@ -212,7 +231,6 @@ li ul li a {
 .hover-opacity {
   opacity: 1.0;
   transition: opacity 0.1s ease-in-out;
-
 }
 
 .hover-opacity:hover{
@@ -223,4 +241,59 @@ li ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style: none;
+
+}
+
+
+.contact {
+  width: 100%;
+  text-transform: uppercase;
+ 
+}
+
+.contact ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 ;
+  margin: 0;
+}
+
+.contact li {
+  margin: 10px;
+  padding-right: 10%;
+}
+
+.contact li:hover{
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+.contact ul li a p {
+  color: #4d4d4d;
+  font-weight: 200;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.contact ul li a p:link{
+  color: #4d4d4d;
+  text-decoration: none;
+}
+
+
+/* footer Section */
+
+.text-black {
+  font-size: 12px;
+  text-decoration: none;
+  margin-top: 1% ;
+}
+
+.text-black:hover{
+  text-decoration: underline;
+  color: #4d4d4d;
 }
