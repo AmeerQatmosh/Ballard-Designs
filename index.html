@@ -1,70 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial=scale=1.0">
-        <title>Furniture Stores and Home Decor</title>
-        <link rel="icon" type="image/x-icon" href="img/BD_favicon.ico">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial=scale=1.0">
+    <title>Furniture Stores and Home Decor</title>
+    <link rel="icon" type="image/x-icon" href="img/BD_favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <body>
-        <header>
-            <div class="user-service">
-                <div class="catalog-store">
-                    <a href="https://www.ballarddesigns.com/RequestACatalogView?" class="header-element">Request a Catalog</a>
-                    <a href="https://www.ballarddesigns.com/BallardDesigns/US/CustomerService/store-locations/content-path" class="header-element" >Find a Store</a>
-                </div>
-                
-                <div class="user-profile">
-                    <i class="fa-solid fa-right-to-bracket" style="color:#4d4d4d;"></i>
-                    <a href="https://www.ballarddesigns.com/UserLogonView?storeId=10052&catalogId=10551&langId=-1" class="header-element">Sign in/Register</a>
-                    <i class="fa-solid fa-heart" style="color:#4d4d4d;" ></i>
-                    <a href="https://www.ballarddesigns.com/WishListHomeView?storeId=10052&catalogId=10551&langId=-1"class="header-element">Wish list</a>
-                    <i class="fa-solid fa-truck fa-flip-horizontal" style="color:#4d4d4d;" ></i>
-                    <a href="https://www.ballarddesigns.com/OrderStatusView?storeId=10052&catalogId=10551&langId=-1" class="header-element" >Order Status</a>
-                    <i class="fa-solid fa-cart-shopping" style="color:#4d4d4d;"></i>
-                    <a href="https://www.ballarddesigns.com/ShoppingCartView?catalogId=10551&storeId=10052&langId=-1&krypto=THEysmZMk1RsAztCX9cm7Cs6ooXA2Iwgv8yO5qnOW5iMDkorSnznxbDUTsGAFLWwBB%2F1bczIuwZHnR9l4pbVwSDGS2MLhfx5XlLCCL1atz5d03sycKswilDsvGuRjapcKzuZwQKDQXCRTDIT1bzpUbjXy8Ar2zYpHApmnGRvk4ZXuQ8xVYqI38rxRcARMb7C" class="header-element">Cart (0 items)</a>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header id="navbar">
+        <div class="user-service">
+            <div class="catalog-store">
+                <a href="https://www.ballarddesigns.com/RequestACatalogView?" class="header-element">Request a
+                    Catalog</a>
+                <a href="https://www.ballarddesigns.com/BallardDesigns/US/CustomerService/store-locations/content-path"
+                    class="header-element">Find a Store</a>
+            </div>
+
+            <div class="user-profile">
+                <i class="fa-solid fa-right-to-bracket" style="color:#4d4d4d;"></i>
+                <a href="https://www.ballarddesigns.com/UserLogonView?storeId=10052&catalogId=10551&langId=-1"
+                    class="header-element">Sign in/Register</a>
+                <i class="fa-solid fa-heart" style="color:#4d4d4d;"></i>
+                <a href="https://www.ballarddesigns.com/WishListHomeView?storeId=10052&catalogId=10551&langId=-1"
+                    class="header-element">Wish list</a>
+                <i class="fa-solid fa-truck fa-flip-horizontal" style="color:#4d4d4d;"></i>
+                <a href="https://www.ballarddesigns.com/OrderStatusView?storeId=10052&catalogId=10551&langId=-1"
+                    class="header-element">Order Status</a>
+                <i class="fa-solid fa-cart-shopping" style="color:#4d4d4d;"></i>
+                <a href="https://www.ballarddesigns.com/ShoppingCartView?catalogId=10551&storeId=10052&langId=-1&krypto=THEysmZMk1RsAztCX9cm7Cs6ooXA2Iwgv8yO5qnOW5iMDkorSnznxbDUTsGAFLWwBB%2F1bczIuwZHnR9l4pbVwSDGS2MLhfx5XlLCCL1atz5d03sycKswilDsvGuRjapcKzuZwQKDQXCRTDIT1bzpUbjXy8Ar2zYpHApmnGRvk4ZXuQ8xVYqI38rxRcARMb7C"
+                    class="header-element">Cart (0 items)</a>
+            </div>
+        </div>
+
+        <div class="customer-service">
+            <div class="registry-service">
+                <a href="https://www.ballarddesigns.com/GiftRegistryHomeView" class="registry-service">Gift Registry</a>
+                <a href="https://www.ballarddesigns.com/BallardDesigns/US/CustomerService/DesignServices/content-path"
+                    class="registry-service">Design Services</a>
+            </div>
+
+            <div class="website-logo" id="logo">
+                <div>
+                    <a href="https://www.ballarddesigns.com/" class="logo" title="Ballard Designs Logo">
+                        <img
+                            src="https://static1.ballarddesigns.com/wcsstore/images/BallardDesigns/header/BallardDesigns_SiteLogo.svg">
+                    </a>
                 </div>
             </div>
 
-            <div class="customer-service">
-                <div class="registry-service">
-                    <a href="https://www.ballarddesigns.com/GiftRegistryHomeView" class="registry-service">Gift Registry</a>
-                    <a href="https://www.ballarddesigns.com/BallardDesigns/US/CustomerService/DesignServices/content-path" class="registry-service">Design Services</a>
-                </div>
+            <div class="search-box">
 
-                <div class="website-logo">
-                    <div>
-                        <a href="https://www.ballarddesigns.com/" class="logo" title="Ballard Designs Logo">
-                            <img src="https://static1.ballarddesigns.com/wcsstore/images/BallardDesigns/header/BallardDesigns_SiteLogo.svg">
-                        </a>
-                    </div>
-                </div>
-
-                <div class="search-box">
-
-                      <div class="input-group">
-                        <input class="form-control border-end-0 border" type="search" value="Search" id="example-search-input" style="font-size: 12px;font-weight:300">
-                            <button class="btn btn-outline-secondary bg-white border-start-0 border-bottom-1 border ms-n5" type="button">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </span>
-                    </div>
+                <div class="input-group">
+                    <input class="form-control border-end-0 border" type="search" value="Search"
+                        id="example-search-input" style="font-size: 12px;font-weight:300">
+                    <button class="btn btn-outline-secondary bg-white border-start-0 border-bottom-1 border ms-n5"
+                        type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    </span>
                 </div>
             </div>
+        </div>
 
-            <nav id="navbar">
-                    <ul class="nav justify-content-center">
-                      <li class="nav-item">
-                        <a href="https://www.ballarddesigns.com/outdoor/?"
-                        style="vertical-align: baseline;color: #0063C7;font-family: 'Cormorant';font-style: italic;text-transform: lowercase;font-size: 21px;">outdoor</a>
-                        <ul>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a href="https://www.ballarddesigns.com/outdoor/?"
+                        style="vertical-align: baseline;color: #0063C7;font-family: 'Cormorant';font-style: italic;text-transform: lowercase;font-size: 21px;">
+                        <div class="sublist">
+                            outdoor
+                    </a>
+                    </div>
+                    <!-- <div class="column-1">
+                                <a href="https://www.ballarddesigns.com/outdoor/all/">Shop all outdoor</a> -->
+                    <!-- <ul>
+                                    <li><a href="https://www.ballarddesigns.com/outdoor/furniture/all/">All Outdoor Furniture</a></li>
+                                    <li><a href="https://www.ballarddesigns.com/outdoor/furniture/collection/">Outdoor Furniture Collection</a></li>
+                                    <li><a href="https://www.ballarddesigns.com/outdoor/furniture/dining-sets/">Dining Sets</a></li>
+                                    <li><a href="https://www.ballarddesigns.com/outdoor/furniture/dining-tables/">Dining Tables</a></li>
+                                    <li><a href="https://www.ballarddesigns.com/outdoor/furniture/dining-chairs/">Dining Chairs</a></li>
+                                    <li><a href="https://www.ballarddesigns.com/outdoor/furniture/accent/">Accent Furniture</a></li>
+                                    <li><a href="https://www.ballarddesigns.com/outdoor/furniture/chaise-lounge/">Chaise Lounges</a></li>
+                                    <li><a href="https://www.ballarddesigns.com/outdoor/furniture/seating/">Sofas & Lounge Seating</a></li>
+                                    <li><a href="https://www.ballarddesigns.com/outdoor/furniture/swings-and-daybeds/">Swings & Daybeds</a></li>
+                                    <li><a href="https://www.ballarddesigns.com/outdoor/storage/">Storage Solution</a></li>
+                                    <li><a href="https://www.ballarddesigns.com/outdoor/furniture-covers/">Outdoor Furniture Covers</a></li>
+                                </ul> -->
+                    <!-- </div>
+
+                            <div class="column-2">
+                                <li class="nav-item"><a href="https://www.ballarddesigns.com/outdoor/cushions-pillows/"class="nav-link">Outdoor Cushions & Pillows</a>
+                                </li>
+                            </div>
+
+                            <div class="column-3">
+                                <li class="nav-item"><a href="https://www.ballarddesigns.com/outdoor/decor/" class="nav-link">Outdoor Decor </a>
+                            </div>
+
+                            <div class="column-4">
+                                <img src="./img/BD_favicon.ico">
+                            </div>  -->
+
+                    <!-- <ul>
                           <li><a href="https://www.ballarddesigns.com/outdoor/all/">Shop all outdoor</a></li>
-                          <li><a href="https://www.ballarddesigns.com/outdoor/furniture/" >Outdoor Furniture</a>
                             <li><a href="https://www.ballarddesigns.com/outdoor/furniture/all/">All Outdoor Furniture</a></li>
                             <li><a href="https://www.ballarddesigns.com/outdoor/furniture/collection/">Outdoor Furniture Collection</a></li>
                             <li><a href="https://www.ballarddesigns.com/outdoor/furniture/dining-sets/">Dining Sets</a></li>
@@ -100,438 +145,478 @@
                         </li>
                           <li class="nav-item"><a href="https://www.ballarddesigns.com/outdoor/shop-by-style/" class="nav-link">Shop by Style</a></li>
 
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Furniture</a>
-                    </li>
-                      
-                    <li>
-                        <a href="#">Mirrors & Art</a>  
-                    </li>
-                    
-                    <li>
-                        <a href="#">Decor & More</a>
-                    </li>
+                        </ul> -->
+                </li>
+                <li>
+                    <a href="#">Furniture</a>
+                </li>
 
-                    <li>
-                        <a href="#">Rugs & Drapery</a>
-                    </li>
+                <li>
+                    <a href="#">Mirrors & Art</a>
+                </li>
 
-                    <li>
-                        <a href="#">Lighting</a>
-                    </li>
+                <li>
+                    <a href="#">Decor & More</a>
+                </li>
 
-                    <li>
-                        <a href="#">Bed & Bath</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Fabric</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Sale</a>
-                    </li>
-                    
-                    <li>
-                        <a href="#">Holiday</a>
-                    </li>
-                </ul>                  
-            </nav>
-        </header>
+                <li>
+                    <a href="#">Rugs & Drapery</a>
+                </li>
 
-        <div>
-            <a href="https://www.ballarddesigns.com/outdoor/">
-                <img src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/050923/050923_homepage.jpg" 
-                style="height:auto;width: 100%; padding: 0 10%">
-            </a>
-        </div>
+                <li>
+                    <a href="#">Lighting</a>
+                </li>
 
-        <div class="product-list">
-            <div class="grid-container">
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0" >
-                    <a class="link-black" href="https://www.ballarddesigns.com/new/all/">
-                        <img 
-                        src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_wallart_d.jpg" 
-                        alt="New Arrivals"
-                        class="hover-opacity">
-                        <h2 class="product-item">New Arrivals</h2> 
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <a class="link-black" href="https://www.ballarddesigns.com/outdoor/cushions-pillows/pillows">
-                        <img
-                        src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_pillow_d.jpg" 
-                        alt="Outdoor Pillows"
-                        class="hover-opacity"> 
-                        <h2 class="product-item">Outdoor Pillows</h2>
-                    </a>
-                </div>
+                <li>
+                    <a href="#">Bed & Bath</a>
+                </li>
 
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <a class="link-black" href="https://www.ballarddesigns.com/outdoor/?">
-                        <img
-                        src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_outdoor_d.jpg" 
-                        alt="Outdoor"
-                        class="hover-opacity"> 
-                        <h2 class="product-item">Outdoor</h2>
-                    </a>
-                </div>
+                <li>
+                    <a href="#">Fabric</a>
+                </li>
 
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <a class="link-black" href="https://www.ballarddesigns.com/outdoor/umbrellas/?">
-                        <img
-                        src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/032823/MA23_category_umbrella_d.jpg" 
-                        alt="Umbrellas"
-                        class="hover-opacity"> 
-                        <h2 class="product-item">Umbrellas</h2>
-                    </a>
-                </div>
+                <li>
+                    <a href="#">Sale</a>
+                </li>
 
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <a class="link-black" href="https://www.ballarddesigns.com/outdoor/decor/planters/?">
-                        <img
-                        src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_planters_d.jpg" 
-                        alt="Planters"
-                        class="hover-opacity"> 
-                        <h2 class="product-item">Planters</h2>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <a class="link-black" href="https://www.ballarddesigns.com/rugs-drapery/rugs/all/">
-                        <img 
-                        src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_rugs_d.jpg" 
-                        alt="Rugs & Mats"
-                        class="hover-opacity"> 
-                        <h2 class="product-item">Rugs & Mats</h2>
-                    </a>
-                </div>
+                <li>
+                    <a href="#">Holiday</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <a class="link-black" href="https://www.ballarddesigns.com/furniture/bedroom/nightstand/?">
-                        <img
-                        src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_nightstands_d.jpg" 
-                        alt="Nightstands & Dressers"
-                        class="hover-opacity"> 
-                        <h2 class="product-item">Nightstands & Dressers</h2>
-                    </a>
-                </div>
+    <div>
+        <a href="https://www.ballarddesigns.com/outdoor/">
+            <img src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/050923/050923_homepage.jpg"
+                class="advertisement">
+        </a>
+    </div>
 
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <a class="link-black" href="https://www.ballarddesigns.com/furniture/living-room/coffee-accent-tables/?">
-                        <img  
-                        src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2022/112822/OND22_category_coffee_d.jpg" 
-                        alt="Coffee & Accent Tables"
-                        class="hover-opacity"> 
-                        <h2 class="product-item">Coffee & Accent Tables</h2>
-                    </a>
-                </div>
+    <!-- End of Header Section-->
 
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <a class="link-black" href="https://www.ballarddesigns.com/furniture/home-office/bookcases/?">
-                        <img
-                        src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/041823/MJJ23_category_bookcases_d.jpg" 
-                        alt="Bookcases Cabinets Category"
-                        class="hover-opacity">
-                        <h2 class="product-item">Bookcases & Cabinets</h2>
-                    </a>
-                </div>
 
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <a class="link-black" href="https://www.ballarddesigns.com/trends-features/trends/design-school/gordon-dunning/">
-                        <img  
-                        src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/_media/Homepage/images/2023/032123/MA23_category_DS_d.jpg" 
-                        alt="Shop Episode 5"
-                        class="hover-opacity"> 
-                        <h2 class="product-item">Shop Episode 7</h2>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="contact">
-            <div class="grid-container">
-
-                <div>
-                    <a class="link-black" href="https://www.ballarddesigns.com/new/all/">
-                        <p>
-                            <i class="fa-solid fa-phone" style="color:#4d4d4d;"></i>
-                            (800) 536-7551
-                        </p> 
-                    </a>
-                </div>
-
-                <div>
-                    <a class="link-black" href="https://www.ballarddesigns.com/new/all/">
-                        <p>
-                            <i class="fa-regular fa-comment" style="color:#4d4d4d;"></i>
-                            Live Chat</p> 
-                    </a>
-                </div>
-
-                <div>
-                    <a class="link-black" href="https://www.ballarddesigns.com/CustomerServiceFormView">
-                        <p>
-                            <i class="fa-regular fa-envelope"style="color:#4d4d4d;"></i>
-                            Email Us</p> 
-                    </a>
-                </div>
-
-                <div>
-                    <a class="link-black" href="https://www.ballarddesigns.com/BallardDesigns/US/CustomerService/DesignServices/content-path">
-                        <p>
-                            <i class="fa-solid fa-pencil" style="color:#4d4d4d;"></i>
-                            Design Services</p> 
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-    <footer>
-            <div class="grid-container">
-                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                    <h5  style="font-size:medium;">Sign Up For Emails</h5>
-
-                    <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="email@example.com" style="height:1px;width: 150px;border-radius:0;">
-                        <label for="floatingInput" style="font-size: 11px;display: flex;align-items: center;">Email address</label>
+    <!-- Products Section -->
+    <div class="product-list">
+        <div class="row">
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <a class="link-black" href="https://www.ballarddesigns.com/new/all/">
+                    <img src="./img/New Arrivals.jpg" alt="New Arrivals" class="hover-opacity">
+                    <div class="product-item">
+                        <p>New Arrivals</p>
                     </div>
-                    <button class="btn btn-primary" type="submit" style="background-color:#41686F;text-transform: uppercase;width: 80px;font-size: 12px;border: 2px solid #fff;border-radius:0; outline-style: solid;
-                    outline-color: #41686F;font-weight: 600;">Sign Up</button>
-                    <p style="font-size: 11px;">Sign up to receive news about<br> special promotions, features, new<br> arrivals and more.</p>
+                </a>
+
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <a class="link-black" href="https://www.ballarddesigns.com/outdoor/cushions-pillows/pillows">
+                    <img src="./img/Outdoor Pillows.jpg" alt="Outdoor Pillows" class="hover-opacity">
+                    <div class="product-item">
+                        <p>Outdoor Pillows</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <a class="link-black" href="https://www.ballarddesigns.com/outdoor/?">
+                    <img src="./img/Outdoor.jpg" alt="Outdoor" class="hover-opacity">
+                    <div class="product-item">
+                        <p>Outdoor</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <a class="link-black" href="https://www.ballarddesigns.com/outdoor/umbrellas/?">
+                    <img src="./img/Umbrellas.jpg" alt="Umbrellas" class="hover-opacity">
+                    <div class="product-item">
+                        <p>Umbrellas</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <a class="link-black" href="https://www.ballarddesigns.com/outdoor/decor/planters/?">
+                    <img src="./img/Planters.jpg" alt="Planters" class="hover-opacity">
+                    <div class="product-item">
+                        <p>Planters</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <a class="link-black" href="https://www.ballarddesigns.com/rugs-drapery/rugs/all/">
+                    <img src="./img/Rugs & Mats.jpg" alt="Rugs & Mats" class="hover-opacity">
+                    <div class="product-item">
+                        <p>Rugs & Mats</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <a class="link-black" href="https://www.ballarddesigns.com/furniture/bedroom/nightstand/?">
+                    <img src="./img/Nightstands & Dressers.jpg" alt="Nightstands & Dressers" class="hover-opacity">
+                    <div class="product-item">
+                        <p>Nightstands & Dressers</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <a class="link-black"
+                    href="https://www.ballarddesigns.com/furniture/living-room/coffee-accent-tables/?">
+                    <img src="./img/Coffee & Accent Tables.jpg" alt="Coffee & Accent Tables" class="hover-opacity">
+                    <div class="product-item">
+                        <p>Coffee & Accent Tables</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <a class="link-black" href="https://www.ballarddesigns.com/furniture/home-office/bookcases/?">
+                    <img src="./img/Bookcases & Cabinets.jpg" alt="Bookcases Cabinets Category" class="hover-opacity">
+                    <div class="product-item">
+                        <p>Bookcases & Cabinets</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <a class="link-black"
+                    href="https://www.ballarddesigns.com/trends-features/trends/design-school/gordon-dunning/">
+                    <img src="./img/Shop Episode 8.jpg" alt="Shop Episode 8" class="hover-opacity">
+                    <div class="product-item">
+                        <p>Shop Episode 8</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="row">
+            <div class="col-sm-4 col-md-6 col-lg-3">
+                <a class="link-black" href="https://www.ballarddesigns.com/new/all/">
                     <p>
-                        <a href="https://www.ballarddesigns.com/howtodecorate/" class="decorate">how to decorate
-                            <ul class="list-unstyled">
-                                <li>
-                                    <a href="https://www.ballarddesigns.com/howtodecorate/podcast/" class="text-black" style="font-size: 15px;">The bodcast</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.ballarddesigns.com/howtodecorate/" class="text-black" style="font-size: 15px;" >The Blog</a>
-                                </li>
-                            </ul>
-                        </a>
+                        <i class="fa-solid fa-phone" style="color:#4d4d4d;"></i>
+                        (800) 536-7551
                     </p>
+                </a>
+            </div>
+
+            <div class="col-sm-8 col-md-6 col-lg-3">
+                <a class="link-black" href="https://www.ballarddesigns.com/new/all/">
+                    <p>
+                        <i class="fa-regular fa-comment" style="color:#4d4d4d;"></i>
+                        Live Chat
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-sm-8 col-md-6 col-lg-3">
+                <a class="link-black" href="https://www.ballarddesigns.com/CustomerServiceFormView">
+                    <p>
+                        <i class="fa-regular fa-envelope" style="color:#4d4d4d;"></i>
+                        Email Us
+                    </p>
+                </a>
+            </div>
+
+            <div class="col-sm-8 col-md-6 col-lg-3">
+                <a class="link-black"
+                    href="https://www.ballarddesigns.com/BallardDesigns/US/CustomerService/DesignServices/content-path">
+                    <p>
+                        <i class="fa-solid fa-pencil" style="color:#4d4d4d;"></i>
+                        Design Services
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col-sm-4 col-md-2 col-lg-2">
+                <h5 style="font-size:medium;">Sign Up For Emails</h5>
+                <div class="form-floating mb-2">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="email@example.com"
+                        style="height:1px;
+                        width: 150px;
+                        border-radius:0;
+                        float: left;">
+                    <label for="floatingInput" style="font-size: 11px;display: flex;align-items: center;">Email
+                        Address</label>
+                    <button class="btn btn-primary" type="submit" id="signup">Sign Up</button>
                 </div>
 
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                    <h6 class="text-uppercase">About Ballard Designs</h6>
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="https://www.ballarddesigns.com/about-us/content" class="text-black">About Us</a>
-                        </li>
-                                
-                        <li>
-                            <a href="https://www.ballarddesigns.com/BallardDesigns/US/CustomerService/store-locations/content-path" class="text-black">Store Locations</a>
-                        </li>
-                                
-                        <li>
-                            <a href="https://www.ballarddesigns.com/howtodecorate/" class="text-black">Our Blog</a>
-                        </li>
-                                
-                        <li>
-                            <a href="https://careers.qurateretailgroup.com/cornerstone/ballard-designs/?multi_select1=Ballard%20Designs" class="text-black">Careers</a>
-                        </li>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/CustomerServiceFormView" class="text-black">Contact Us</a>
-                        </li>
+                <p style="font-size: 11px;">Sign up to receive news about<br> special promotions, features, new<br>
+                    arrivals and more.</p>
+                <p>
+                    <a href="https://www.ballarddesigns.com/howtodecorate/" class="decorate">how to decorate
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://www.ballarddesigns.com/howtodecorate/podcast/" class="text-black"
+                                    style="font-size: 15px;">The bodcast</a>
+                            </li>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/trends-features/features/cares" class="text-black">Ballard Designs Cares</a>
-                        </li>
-          
-                        <li>
-                            <a href="http://www.qurateretailgroup.com/" class="text-black">About Qurate Retail Group</a>
-                        </li>
-                                
-                        <li>
-                            <a href="https://www.ballarddesigns.com/BallardDesigns/US/Global/PressReleases/content-path" class="text-black">Press Releases</a>
-                        </li>
-                    </ul>
-                        
-                </div>
-                
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                    <h6 class="text-uppercase">Help & Information</h6>
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="#!" class="text-black">Live Chat</a>
-                        </li>
-                                
-                        <li>
-                            <a href="https://www.ballarddesigns.com/faqs/content" class="text-black">Customer Services</a>
-                        </li>
-                                
-                        <li>
-                            <a href="https://www.ballarddesigns.com/faqs/content?api=fullAnswer&articleId=250700000014947" class="text-black">Communications Preferences</a>
-                        </li>
-                                
-                        <li>
-                            <a href="https://www.ballarddesigns.com/RequestACatalogView" class="text-black">Request A Catalog</a>
-                        </li>
+                            <li>
+                                <a href="https://www.ballarddesigns.com/howtodecorate/" class="text-black"
+                                    style="font-size: 15px;">The Blog</a>
+                            </li>
+                        </ul>
+                    </a>
+                </p>
+            </div>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/trends-features/features/safety/" class="text-black">Product Safety</a>
-                        </li>
+            <div class="col-sm-4 col-md-2 col-lg-1" style="margin-left:3%;">
+                <h6 class="text-uppercase">About Ballard Designs</h6>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="https://www.ballarddesigns.com/about-us/content" class="text-black">About Us</a>
+                    </li>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/product-safety/content" class="text-black">Safety Recall</a>
-                        </li>
+                    <li>
+                        <a href="https://www.ballarddesigns.com/BallardDesigns/US/CustomerService/store-locations/content-path"
+                            class="text-black">Store Locations</a>
+                    </li>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/trends-features/features/guide/" class="text-black">Product Guides</a>
-                        </li>
+                    <li>
+                        <a href="https://www.ballarddesigns.com/howtodecorate/" class="text-black">Our Blog</a>
+                    </li>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/returns-and-exchgs/content" class="text-black">Returns & Exchanges</a>
-                        </li>
+                    <li>
+                        <a href="https://careers.qurateretailgroup.com/cornerstone/ballard-designs/?multi_select1=Ballard%20Designs"
+                            class="text-black">Careers</a>
+                    </li>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/BallardDesigns/US/Footer/CustomerService/accessibility-statement/content-path" class="text-black">Accessibility Statement</a>
-                        </li>
+                    <li>
+                        <a href="https://www.ballarddesigns.com/CustomerServiceFormView" class="text-black">Contact
+                            Us</a>
+                    </li>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/PrivacyComplianceRequestView" class="text-black">Your Privacy Choices</a>
-                        </li>
+                    <li>
+                        <a href="https://www.ballarddesigns.com/trends-features/features/cares"
+                            class="text-black">Ballard Designs Cares</a>
+                    </li>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/BallardDesigns/US/Footer/ca-supply-chains-transparency/content-path" class="text-black">CA Supply Chains Transparency</a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                    <h6 class="text-uppercase">Services</h6>
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="https://www.ballarddesigns.com/design-solutions/content" class="text-black">Ask A Designer</a>
-                        </li>
-                                
-                        <li>
-                            <a href="https://www.ballarddesigns.com/GiftRegistryHomeView" class="text-black">Gift Registry</a>
-                        </li>
-                                
-                        <li>
-                            <a href="https://www.ballarddesigns.com/online-designer-program/content" class="text-black">To The Trade</a>
-                        </li>
-                                
-                        <li>
-                            <a href="https://ballarddesigns.icovia.com/icovia.aspx" class="text-black">Room Planner</a>
-                        </li>
-                    </ul>
-                </div>
+                    <li>
+                        <a href="http://www.qurateretailgroup.com/" class="text-black">About Qurate Retail Group</a>
+                    </li>
 
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-                    <h6 class="text-uppercase">Browse Categeories</h6>
-                    <ul class="list-unstyled mb-0">
-                        <li>
-                            <a href="https://www.ballarddesigns.com/furniture" class="text-black">Furniture</a>
-                        </li>
-                                
-                        <li>
-                            <a href="https://www.ballarddesigns.com/outdoor" class="text-black">Outdoor</a>
-                        </li>
-                                
-                        <li>
-                            <a href="https://www.ballarddesigns.com/mirrors-art" class="text-black">Mirrors & Art</a>
-                        </li>
-                                
-                        <li>
-                            <a href="https://www.ballarddesigns.com/decor-more" class="text-black">Décor & More</a>
-                        </li>
+                    <li>
+                        <a href="https://www.ballarddesigns.com/BallardDesigns/US/Global/PressReleases/content-path"
+                            class="text-black">Press Releases</a>
+                    </li>
+                </ul>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/rugs-drapery" class="text-black">Rugs and Drapery</a>
-                        </li>
+            </div>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/lighting" class="text-black">Lighting</a>
-                        </li>
+            <div class="col-sm-4 col-md-2 col-lg-1">
+                <h6 class="text-uppercase">Help & Information</h6>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-black">Live Chat</a>
+                    </li>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/bed-bath" class="text-black">Bed & Bath</a>
-                        </li>
+                    <li>
+                        <a href="https://www.ballarddesigns.com/faqs/content" class="text-black">Customer Services</a>
+                    </li>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/fabric" class="text-black">Fabric</a>
-                        </li>
+                    <li>
+                        <a href="https://www.ballarddesigns.com/faqs/content?api=fullAnswer&articleId=250700000014947"
+                            class="text-black">Communications Preferences</a>
+                    </li>
 
-                        <li>
-                            <a href="https://www.ballarddesigns.com/sale" class="text-black">Sale</a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-2 col-md-6 mb-4 mb-md-1">
-                    <h6 class="text-uppercase">The Ballard Designs <br>Credit Card</h6>
-                    <ul class="list-unstyled mb-1">
-                        <li>
-                            <a href="https://www.ballarddesigns.com/plcc-instant-landing/content" class="text-black">Credit Benefits</a>
-                        </li>
-                        
-                        <li>
-                            <a href="https://www.ballarddesigns.com/plcc-instant-landing/content" class="text-black">How to Apply</a>
-                        </li>
-                            
-                        <li>
-                            <a href="https://d.comenity.net/ballarddesigns/pub/Home.xhtml" class="text-black">Manage My Card</a>
-                        </li>
-                            
-                    </ul>
+                    <li>
+                        <a href="https://www.ballarddesigns.com/RequestACatalogView" class="text-black">Request A
+                            Catalog</a>
+                    </li>
 
-                    <div class="credit">
-                        <a href="https://www.ballarddesigns.com/plcc-instant-landing/content">
-                            <img src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/footer/credit_card_apply-card.gif" title="Apply for Ballard Designs Credit Card" alt="">
-                            <p class="credit-card-text" style="text-decoration: none;">
-                                <span style="color: #DD3156;font-size: 13px;text-transform: uppercase;font-weight: 800;
+                    <li>
+                        <a href="https://www.ballarddesigns.com/trends-features/features/safety/"
+                            class="text-black">Product Safety</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/product-safety/content" class="text-black">Safety
+                            Recall</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/trends-features/features/guide/"
+                            class="text-black">Product Guides</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/returns-and-exchgs/content" class="text-black">Returns &
+                            Exchanges</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/BallardDesigns/US/Footer/CustomerService/accessibility-statement/content-path"
+                            class="text-black">Accessibility Statement</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/PrivacyComplianceRequestView" class="text-black">Your
+                            Privacy Choices</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/BallardDesigns/US/Footer/ca-supply-chains-transparency/content-path"
+                            class="text-black">CA Supply Chains Transparency</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4 col-md-2 col-lg-1">
+                <h6 class="text-uppercase">Services</h6>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="https://www.ballarddesigns.com/design-solutions/content" class="text-black">Ask A
+                            Designer</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/GiftRegistryHomeView" class="text-black">Gift
+                            Registry</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/online-designer-program/content" class="text-black">To
+                            The Trade</a>
+                    </li>
+
+                    <li>
+                        <a href="https://ballarddesigns.icovia.com/icovia.aspx" class="text-black">Room Planner</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4 col-md-2 col-lg-1">
+                <h6 class="text-uppercase">Browse Categeories</h6>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="https://www.ballarddesigns.com/furniture" class="text-black">Furniture</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/outdoor" class="text-black">Outdoor</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/mirrors-art" class="text-black">Mirrors & Art</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/decor-more" class="text-black">Décor & More</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/rugs-drapery" class="text-black">Rugs and Drapery</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/lighting" class="text-black">Lighting</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/bed-bath" class="text-black">Bed & Bath</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/fabric" class="text-black">Fabric</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/sale" class="text-black">Sale</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-sm-4 col-md-2 col-lg-1">
+                <h6 class="text-uppercase">The Ballard Designs <br>Credit Card</h6>
+                <ul class="list-unstyled mb-1">
+                    <li>
+                        <a href="https://www.ballarddesigns.com/plcc-instant-landing/content" class="text-black">Credit
+                            Benefits</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.ballarddesigns.com/plcc-instant-landing/content" class="text-black">How to
+                            Apply</a>
+                    </li>
+
+                    <li>
+                        <a href="https://d.comenity.net/ballarddesigns/pub/Home.xhtml" class="text-black">Manage My
+                            Card</a>
+                    </li>
+
+                </ul>
+
+                <div class="credit">
+                    <a href="https://www.ballarddesigns.com/plcc-instant-landing/content">
+                        <img src="https://www.ballarddesigns.com/wcsstore/images/BallardDesigns/footer/credit_card_apply-card.gif"
+                            title="Apply for Ballard Designs Credit Card" alt="">
+                        <p class="credit-card-text" style="text-decoration: none;">
+                            <span style="color: #DD3156;font-size: 13px;text-transform: uppercase;font-weight: 800;
                                 margin: 0 0 7px;padding: 0;text-decoration: none;">Earn 10% Back</span>
-                                <br>
-                                When You Use Your<br>Ballard Designs<br>Credit Card<sup>4</sup>
-                                <br>
-                                <span class="btn btn-link display-block" alt="Apply for Ballard Designs Credit Card" style="color: #DD3156;font-size: 13px;text-transform: uppercase;font-weight: 800;text-decoration: none;">Apply Now </span>
-                            </p>
-                        </a>
-                    </div>
+                            <br>
+                            When You Use Your<br>Ballard Designs<br>Credit Card<sup>4</sup>
+                            <br>
+                            <span class="btn btn-link display-block" alt="Apply for Ballard Designs Credit Card"
+                                style="color: #DD3156;font-size: 13px;text-transform: uppercase;font-weight: 800;text-decoration: none;">Apply
+                                Now </span>
+                        </p>
+                    </a>
                 </div>
             </div>
+        </div>
 
-            <div style="display: flex;justify-content: center;padding: 2% 15% 3% 15%;">
-                <div style="font-size: 12px;display: flex;justify-content: flex-start;">
-                    © Copyright 2023, Ballard Designs Inc.  
-                </div>
-
-                <div style="display: flex;justify-content: flex-end;">
-                    <a href="https://www.ballarddesigns.com/conditions-of-use/content" class="site-info" style="margin-left: 41px;">Conditions of Use</a>
-                    <a href="https://www.ballarddesigns.com/popularsearches/index.html"class="site-info">Popular Searches</a>
-                    <a href="https://www.ballarddesigns.com/privacy-full/content" class="site-info" >Privacy & Security</a>
-                    <a href="https://www.ballarddesigns.com/SiteMapView?storeId=10052&catalogId=10551&langId=-1" class="site-info">Site Map</a>
-                    <a class="site-info" style="text-decoration: none;">Source Code: ICAT</a>
-                </div>
-
+        <div style="display: flex;justify-content: center;padding: 2% 15% 3% 15%;">
+            <div style="font-size: 12px;display: flex;justify-content: flex-start;">
+                © Copyright 2023, Ballard Designs Inc.
             </div>
 
-            <div class="companies-links">
-                <a href="https://www.qurateretailgroup.com/" class="company underline">QURATE RETAIL GROUP:</a>
-                <a href="https://www.qvc.com/"class="company">QVC</a>
-                <a href="https://www.hsn.com/" class="company" >HSN</a>
-                <a href="https://www.zulily.com/" class="company">Zulily</a>
-                <a href="https://www.ballarddesigns.com/" class="company" >Ballard Designs</a>
-                <a href="https://www.frontgate.com/?_ga=2.178783844.1504362172.1683465236-577110244.1682833640" class="company">Frontgate</a>
-                <a href="https://www.garnethill.com/?_ga=2.178783844.1504362172.1683465236-577110244.1682833640"class="company" >Garnet Hill</a>
-                <a href="https://www.grandinroad.com/?_ga=2.178783844.1504362172.1683465236-577110244.1682833640"class="company" >Grandin Road</a>
+            <div style="display: flex;justify-content: flex-end;">
+                <a href="https://www.ballarddesigns.com/conditions-of-use/content" class="site-info"
+                    style="margin-left: 41px;">Conditions of Use</a>
+                <a href="https://www.ballarddesigns.com/popularsearches/index.html" class="site-info">Popular
+                    Searches</a>
+                <a href="https://www.ballarddesigns.com/privacy-full/content" class="site-info">Privacy & Security</a>
+                <a href="https://www.ballarddesigns.com/SiteMapView?storeId=10052&catalogId=10551&langId=-1"
+                    class="site-info">Site Map</a>
+                <a class="site-info" style="text-decoration: none;">Source Code: ICAT</a>
             </div>
 
-        </footer>
+        </div>
 
+        <div class="companies-links">
+            <a href="https://www.qurateretailgroup.com/" class="company underline">QURATE RETAIL GROUP:</a>
+            <a href="https://www.qvc.com/" class="company">QVC</a>
+            <a href="https://www.hsn.com/" class="company">HSN</a>
+            <a href="https://www.zulily.com/" class="company">Zulily</a>
+            <a href="https://www.ballarddesigns.com/" class="company">Ballard Designs</a>
+            <a href="https://www.frontgate.com/?_ga=2.178783844.1504362172.1683465236-577110244.1682833640"
+                class="company">Frontgate</a>
+            <a href="https://www.garnethill.com/?_ga=2.178783844.1504362172.1683465236-577110244.1682833640"
+                class="company">Garnet Hill</a>
+            <a href="https://www.grandinroad.com/?_ga=2.178783844.1504362172.1683465236-577110244.1682833640"
+                class="company">Grandin Road</a>
+        </div>
 
-
-
-
-
-        <!-- <script src="script.js"></script>          -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> 
-        <script src="https://kit.fontawesome.com/4572a22e59.js" crossorigin="anonymous"></script>
-    </body>
+    </footer>
+    <script src="script.js"></script>         
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4572a22e59.js" crossorigin="anonymous"></script>
+</body>
 
 </html>
