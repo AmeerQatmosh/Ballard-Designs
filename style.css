@@ -1,125 +1,34 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* For mobile phones: */
-/* [class*="col-"] {
-  width: 100%;
-} */
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* Small devices (landscape phones, 576px and up) */
-/* Small devices (phones, 576px and up) */
-
-/* @media screen and (min-width: 576px) {
-  .product-list {
-    display: flex;
-    justify-content: center;
-    padding: 1px 2px 1px 2px;
-  }
-  .product-list .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);;
-  }
-  .product-list .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    height: 210px;
-    width: 200px;
-    text-align: center;
-    padding: 0 0;
-    font-size: 30px;
-  }
-  .product-list .grid-container div a img {
-    max-width: 50%;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-/* @media screen and (min-width: 768px) {
-  .product-list {
-    display: grid;
-    justify-content: center;
-    padding: 1px 2px 1px 2px ;
-  }
-  .product-list .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);;
-    grid-template-rows: auto auto;
-  }
-  .product-list .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    height: 210px;
-    width: 200px;
-    text-align: center;
-    padding: 0 0;
-    font-size: 30px;
-  }
-  .product-list .grid-container div a img {
-    max-width: 50%;
-  }
-} */
-
-/* Large devices (desktops, 992px and up) */
-/* @media screen and (min-width: 992px) {
-  .product-list {
-    display: grid;
-    justify-content: center;
-    padding: 1px 2px 1px 2px;
-  }
-  .product-list .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);;
-  }
-  .product-list .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    height: 210px;
-    width: 200px;
-    text-align: center;
-    padding: 0 0;
-    font-size: 30px;
-  }
-  .product-list .grid-container div a img {
-    max-width: 100%;
-  }
-} */
-
-/* Extra large devices (large desktops, 1200px and up) */
-/* @media screen and (min-width: 1200px) {
-  .product-list {
-    display: grid;
-    justify-content: center;
-    padding: 1px 2px 1px 2px ;
-  }
-  .product-list .grid-container {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .product-list .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    height: 210px;
-    width: 200px;
-    text-align: center;
-    padding: 0 0;
-    font-size: 30px;
-  }
-  .product-list .grid-container div a img {
-    max-width: 100%;
-  }
-} */
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /* Page Primary Elements */
 * {
   box-sizing: border-box;
-  font-family: "Montserrat",Verdana,Helvetica,sans-serif;
+  font-family: "Montserrat", Verdana, Helvetica, sans-serif;
 }
 
 body {
   margin: 0;
-  font-family: "Montserrat",Verdana,Helvetica,sans-serif;
+  overflow-x: hidden;
+  font-family: "Montserrat", Verdana, Helvetica, sans-serif;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
-/* Top Part of Header */
+/* Top Div of Header */
+
+.discount-adv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #665546;
+  width: 100%;
+  height: 37px;
+  background-color: #F3F1E9;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
 
 .header-element {
   font-size: 11px;
@@ -127,43 +36,38 @@ body {
   padding-right: 13px;
 }
 
-.header-element:link{
+.header-element:link,
+.header-element:visited {
   text-decoration: none;
-  color:#4d4d4d;
+  color: #4d4d4d;
 }
 
-.header-element:visited { 
-  text-decoration: none; 
-  color:#4d4d4d;
-}
-
-.header-element:hover{
+.header-element:hover {
   text-decoration: underline;
-  color:#4d4d4d;
 }
 
-.registry-service:link{
+.registry-service:link {
   font-size: 14px;
   text-decoration: none;
-  color:black;
+  color: black;
   font-weight: 500;
 }
 
-.registry-service:hover{
+.registry-service:hover {
   text-decoration: none;
 }
 
 .registry-service:active {
-  color:#4d4d4d;
+  color: #4d4d4d;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
-/* Middel Part of Header */
+/* Middle Div of Header */
 
 .user-service {
   display: flex;
   justify-content: space-between;
-  padding: 9px 10% 0px 10%;
+  padding: 9px 7% 0px 8%;
 }
 
 .catalog-store {
@@ -173,21 +77,21 @@ body {
 
 #user-profile {
   display: flex;
-  justify-content:flex-end;
+  justify-content: flex-end;
   color: #4d4d4d;
 }
 
 .logo {
   display: flex;
-  height: 24px;
-  padding: 0 0 0 18px;
-  justify-content: center;
+  height: 25px;
+  justify-content: flex-end;
+  margin-top: 20px;
 }
 
-.customer-service{
+.customer-service {
   display: flex;
   justify-content: space-between;
-  padding: 0 10% 17px 10%;
+  padding: 0 8% 15px 8%;
 }
 
 .registry-service {
@@ -195,7 +99,6 @@ body {
   justify-content: flex-start;
   vertical-align: bottom;
   padding: 0 13px 0 0;
-
 }
 
 .registry-service a {
@@ -212,7 +115,7 @@ body {
 
 .search-box {
   display: flex;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   position: sticky;
   width: 300px;
@@ -226,23 +129,13 @@ body {
   border-radius: 6px;
 }
 
-.advertisement {
-  height:auto;
-  width: 100%;
-  padding: 14% 10%;
-  bottom: 100px;
-}
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------*/
-/* Bottom Part of Header - Navbar Elements */
-
 nav {
   display: flex;
   justify-content: center;
+  height: 35px;
   border-bottom: 0.5px solid rgb(203, 202, 202);
   border-top: 0.5px solid rgb(203, 202, 202);
 }
-
 
 nav ul {
   list-style: none;
@@ -251,14 +144,20 @@ nav ul {
 }
 
 nav ul li {
-  margin: auto -5px;
-  float: left;
+  margin: auto 0;
+  text-align: center;
+  font-size: 21px;
+  vertical-align: baseline;
+}
+
+nav ul li:hover {
+  border-bottom: 5px solid #62462f !important;
 }
 
 nav ul li a {
   display: block;
   font-size: 12px;
-  color: #4d4d4d;
+  color: black;
   text-transform: uppercase;
   margin-right: 55px;
   text-decoration: none;
@@ -266,24 +165,22 @@ nav ul li a {
   padding: auto 15px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   text-decoration: none;
-  color:#4d4d4d;
-  
+  color: black;
 }
 
-.nav-item a div {
+.nav-item ul {
   display: none; /* Hide the sub-navigation by default */
-  position: relative; /* Position it absolutely relative to the parent */
-  padding: 0;
+  position: absolute; /* Position it absolutely relative to the parent */
+  background-color: #f9f9f9; /* Set a background color */
+  border: 2px solid black;
 }
 
-.nav-item a div :hover  {
-  display:block; /* block; Show the sub-navigation on hover */
-  /* width: 63%;
-  height: 63%; */
-  position: absolute;
-  margin-left: 8px;  
+.nav-item:hover ul {
+  display: grid; /* Show the sub-navigation on hover */
+  height: 500px;
+  width: 700px;
 }
 
 nav .a:hover {
@@ -291,40 +188,16 @@ nav .a:hover {
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
-/* Sticky Navbar */
-
-/* #navbar {
-  overflow: hidden;
-
-}
-
-#navbar ul li a {
-  float: left;
-  display: block;
-}
-
-.sticky {
-  position: fixed;
-  top: 100px;
-  width: 100%;
-  z-index: 100;
-} */
-
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /* Shrink Navbar */
 
 #navbar {
-  overflow: hidden;
   background-color: white;
-  padding: 5px 5px; /* Large padding which will shrink on scroll (using JS) */
-  transition: 0.1s; /* Adds a transition effect when the padding is decreased */
-  position: fixed; /* Sticky/fixed navbar */
+  padding: 5px 5px;
+  transition: 0.1s;
+  position: fixed;
   width: 100%;
   height: auto;
-  top: 0; /* At the top */
+  top: 0;
   z-index: 99;
 }
 
@@ -332,10 +205,6 @@ nav .a:hover {
   height: 24px;
   transition: 0.1s;
 }
-
-/* #navbar-right {
-  float: right;
-} */
 
 @media screen and (max-width: 580px) {
   #navbar {
@@ -346,22 +215,27 @@ nav .a:hover {
     display: block;
     text-align: left;
   }
-  #navbar-right {
-    float: none;
-  }
 }
+
+.discount-img img {
+  width: 100%;
+  margin-top: 172px;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-bottom: 3%;
+}
+
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /* Products */
 
 .product-list .row {
   display: flex;
   flex-direction: row;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   width: auto;
-  gap:15px 35px;
-  margin: 5% 0 5% 0;
-  padding: 0 11% 0 11%;
-  /* white-space: nowrap; */
+  gap: 15px 35px;
+  margin: 0 0 5% 0;
+  padding: 0 10% 0 10%;
 }
 
 .hover-opacity {
@@ -374,12 +248,10 @@ nav .a:hover {
 .link-black {
   text-decoration: none;
   font-size: 13px;
-  width: 50%;
-  height: auto;
 }
 
 .product-item p {
-  color:#4d4d4d;
+  color: #4d4d4d;
   text-transform: uppercase;
   font-size: 13px;
   display: flex;
@@ -387,7 +259,7 @@ nav .a:hover {
   text-align: center;
 }
 
-.product-item:hover{
+.product-item:hover {
   text-decoration: underline;
 }
 
@@ -396,84 +268,73 @@ nav .a:hover {
   color: #4d4d4d;
 }
 
-.hover-opacity:hover{
+.hover-opacity:hover {
   opacity: 0.5;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 .contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
   border-bottom: 0.5px solid rgb(203, 202, 202);
   border-top: 0.5px solid rgb(203, 202, 202);
+  padding: 0 19%;
 }
 
-.contact > div {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 1% 20% 1% 20%;
-  white-space: nowrap;
-  margin-right: 150px ;
+.contact .row div {
+  position: relative;
+  height: 55px;
 }
 
-
-.contact .row div :hover{
-  color: #4d4d4d;
+.contact .row div :hover {
+  color: #62462f !important;
   text-decoration: none;
-
 }
 
-.contact .row div a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-
-}
-
-.contact .row div a p  {
-  color: #4d4d4d;
+.contact .row div .link-black p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #62462f !important;
+  text-transform: uppercase;
   font-weight: 200;
   font-size: 18px;
-  text-decoration: none;  
-}
-
-.contact .row div a p:link{
-  color: #4d4d4d;
   text-decoration: none;
+  white-space: nowrap;
 }
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
 /* footer Section */
 
+footer {
+  position: relative;
+}
+
 footer .row {
+  position: relative;
+  z-index: 2;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
   color: #4d4d4d;
   font-weight: 200;
   font-size: 18px;
   text-decoration: none;
-  max-width: 1280px;
-  min-width: 767px;
   padding-top: 30px;
 }
 
 footer .row div {
-  display: block;
-  white-space:nowrap;
-  list-style-type:none;
-  padding: 0 8% 0 8%;
+  display: inline-block;
+  list-style-type: none;
+  background-color: white;
+  margin-right: 50px;
+  white-space: nowrap;
+  margin-right: 60px;
 }
 
 footer .row div ul {
+  margin: 0px;
+  padding: 0px;
   list-style-type: none;
 }
 
@@ -484,14 +345,16 @@ footer .row div h6 {
 }
 
 .decorate {
-  font-size:25px;
-  font-family:"Kettering";
+  font-size: 15px;
+  font-family: "Kettering";
   color: #4d4d4d;
   text-decoration: none;
+  width: 10px;
 }
-.decorate:hover{
+
+.decorate:hover {
   text-decoration: none;
-  color:#4d4d4d;
+  color: #4d4d4d;
   opacity: 0.5;
 }
 
@@ -501,7 +364,7 @@ footer .row div h6 {
   color: #4d4d4d;
 }
 
-.text-black:hover{
+.text-black:hover {
   text-decoration: underline;
   color: #4d4d4d;
 }
@@ -509,29 +372,33 @@ footer .row div h6 {
 .site-info {
   color: #4d4d4d;
   font-size: 10px;
-  padding:1px 37px 1px 37px ;
+  padding: 1px 37px 1px 37px;
   text-decoration: none;
 }
 
-.site-info:hover{
+.site-info:hover {
   text-decoration: underline;
-  color:#4d4d4d;
+  color: #4d4d4d;
 }
 
-#signup{
-  background-color:#41686F;
+#signup {
+  display: inline-block;
+  background-color: #41686f;
   text-transform: uppercase;
-  width: 80px;
   font-size: 12px;
   border: 2px solid #fff;
-  border-radius:0; 
+  border-radius: 0;
   outline-style: solid;
-  outline-color: #41686F;
+  outline-color: #41686f;
   font-weight: 600;
+  margin: 0 3%;
 }
 
-.companies-links{
+/* Copyrights and other info */
+
+.companies-links {
   background-color: black;
+  width: 100%;
   display: flex;
   justify-content: center;
   height: 40px;
@@ -545,15 +412,15 @@ footer .row div h6 {
   text-decoration: none;
 }
 
-.company:hover{
-  color:white;
+.company:hover {
+  color: white;
 }
 
-.underline:hover{
+.underline:hover {
   text-decoration: underline;
 }
 
-.credit{
+.credit {
   padding: 20px 2px 0;
   border: 1px solid #ccc;
   display: inline-block;
@@ -574,25 +441,42 @@ footer .row div h6 {
   text-decoration: none;
 }
 
-
 .credit a img {
-  position:absolute;
+  position: absolute;
   width: 90px;
   top: -40px;
   left: 25px;
   bottom: 20px;
 }
 
-.credit-card-text{
+.credit-card-text {
   font: 600 10px/1.2em "Montserrat", Verdana, Helvetica, sans-serif;
   text-transform: uppercase !important;
   color: #4d4d4d;
-  font-weight: lighter;
+  font-weight: 700;
 }
 
-.credit-card-text:hover{
-  opacity: 0.5;
+.social-links ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-links li {
+  margin-right: 10px;
+}
+
+.social-links li a {
   text-decoration: none;
+  color: #4d4d4d;
+}
+
+.social-links li a:hover {
+  text-decoration: none;
+  color: #4d4d4d;
+  opacity: 0.5;
 }
 
 /*-----------------------------------------------------------------------------------------------------------------------------------------*/
